@@ -95,9 +95,9 @@ const simulationStore = useSimulationStore();
 const { agents, status, tick, errorMessage } = storeToRefs(simulationStore);
 
 const form = reactive({
-  numAgents: 60,
-  mode: 'swarm',
-  timestep: 0.1,
+  numAgents: 30,
+  mode: 'hpp',
+  timestep: 1,
   updateInterval: 0.1,
 });
 
