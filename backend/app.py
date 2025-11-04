@@ -8,6 +8,8 @@ from backend.models import Mode
 from backend.services import SimulationManager, SimulationSettings
 
 
+from fastapi.staticfiles import StaticFiles
+
 app = FastAPI(title="Swarm Simulation Service")
 
 app.add_middleware(
@@ -139,4 +141,5 @@ async def simulation_stream(websocket: WebSocket, simulation_id: str) -> None:
 @app.get("/health")
 async def healthcheck() -> dict:
     return {"status": "ok"}
-
+    
+app.mount("/", StaticFiles(directory="backend/static", html=True), name="static")

@@ -1,0 +1,12 @@
+/backend/__pycache__/
+/backend/models/__pycache__
+/backend/static/
+/backend/__pycache__
+backend/__pycache__/app.cpython-311.pyc
+backend/models/__pycache__/swarm.cpython-311.pyc
+frontend/dist/
+frontend/node_modules/
+/backend/__pycache__
+backend/models/__pycache__/swarm.cpython-311.pyc
+frontend/node_modules/.package-lock.json
+*.pyc
